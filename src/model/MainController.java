@@ -85,6 +85,8 @@ public class MainController {
 			case 11:
 				System.out.println("Exiting program...");
 				return;
+			case 12:
+				System.out.println("");
 			default:
 				System.out.println("Invalid choice. Please try again.");
 			}
