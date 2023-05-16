@@ -27,5 +27,5 @@ public class ProductTest {
 		Product product = new Product(1, "Carpet Cleaning", 50.0);
 		product.setPrice(60.0);
 		assertEquals(60.0, product.getPrice(), 0.01);
-	}
+ }
 }
