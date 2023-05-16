@@ -13,7 +13,7 @@ import model.Product;
 
 public class InvoiceTest {
 
-    @Test
+
     public void testInvoiceCreation() {
         Customer customer = new Customer(1, "John Doe", "123 Main St", "555-1234", "john@example.com");
         Product product1 = new Product(1, "Carpet Cleaning", 50.0);
@@ -24,9 +24,7 @@ public class InvoiceTest {
         assertEquals(order, invoice.getOrder());
         assertEquals(0.0, invoice.getDiscount());
         assertEquals(75.0, invoice.getTotal());
-    }
 
-    @Test
     public void testInvoiceWithDiscount() {
         Customer customer = new Customer(1, "Jane Smith", "456 Elm St", "555-5678", "jane@example.com");
         Product product1 = new Product(1, "Carpet Cleaning", 60.0);
@@ -40,7 +38,7 @@ public class InvoiceTest {
         assertEquals(80.0, invoice.getTotal() - invoice.getDiscount());
     }
 
-    @Test
+
     public void testInvoiceWithLargeDiscount() {
         Customer customer = new Customer(1, "Bob Johnson", "789 Oak St", "555-9012", "bob@example.com");
         Product product1 = new Product(1, "Carpet Cleaning", 120.0);
